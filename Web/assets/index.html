@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SURABAYA — Kota Pahlawan</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Rajdhani:wght@300;400;500;600;700&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- Noise Overlay -->
+  <div class="noise-overlay"></div>
+
+  <!-- Grid Background -->
+  <div class="grid-bg"></div>
+
+  <!-- Scan Line -->
+  <div class="scanline"></div>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <span class="nav-logo-icon">⚓</span>
+      <span class="nav-logo-text">SBY<span class="accent">_</span>2025</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#hero" class="nav-link" data-text="HOME">HOME</a></li>
+      <li><a href="#stats" class="nav-link" data-text="DATA">DATA</a></li>
+      <li><a href="#history" class="nav-link" data-text="SEJARAH">SEJARAH</a></li>
+      <li><a href="#districts" class="nav-link" data-text="WILAYAH">WILAYAH</a></li>
+      <li><a href="#culture" class="nav-link" data-text="BUDAYA">BUDAYA</a></li>
+    </ul>
+    <div class="nav-status">
+      <span class="status-dot"></span>
+      <span class="status-text">LIVE</span>
+    </div>
+    <button class="nav-hamburger" id="hamburger">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-text">SURABAYA</div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        KOTA PAHLAWAN — EST. 1275 M
+      </div>
+
+      <h1 class="hero-title">
+        <span class="glitch-text" data-text="SURA">SURA</span><span class="title-divider">&amp;</span><span class="glitch-text accent-text" data-text="BAYA">BAYA</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Ibu Kota Jawa Timur. Kota Terbesar Kedua Indonesia.<br/>
+        <span class="mono">[ -7.2575°S / 112.7521°E ]</span>
+      </p>
+
+      <div class="hero-cta">
+        <a href="#stats" class="btn-primary">JELAJAHI DATA</a>
+        <a href="#history" class="btn-secondary">LIHAT SEJARAH</a>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-circle">
+        <div class="circle-ring ring-1"></div>
+        <div class="circle-ring ring-2"></div>
+        <div class="circle-ring ring-3"></div>
+        <div class="circle-icon">⚓</div>
+        <div class="circle-label">KOTA PAHLAWAN</div>
+      </div>
+    </div>
+
+    <div class="hero-scroll">
+      <span class="scroll-line"></span>
+      <span class="scroll-text">SCROLL</span>
+    </div>
+
+    <div class="hero-bottom-bar">
+      <div class="hbb-item"><span class="hbb-label">POPULASI</span><span class="hbb-val">3.000.076</span></div>
+      <div class="hbb-divider"></div>
+      <div class="hbb-item"><span class="hbb-label">LUAS WILAYAH</span><span class="hbb-val">335,28 KM²</span></div>
+      <div class="hbb-divider"></div>
+      <div class="hbb-item"><span class="hbb-label">KECAMATAN</span><span class="hbb-val">31</span></div>
+      <div class="hbb-divider"></div>
+      <div class="hbb-item"><span class="hbb-label">KELURAHAN</span><span class="hbb-val">154</span></div>
+    </div>
+  </section>
+
+  <!-- ===== STATS ===== -->
+  <section class="stats-section" id="stats">
+    <div class="section-header">
+      <span class="section-tag mono">// DATA_KOTA</span>
+      <h2 class="section-title">STATISTIK <span class="accent-text">VITAL</span></h2>
+      <p class="section-desc">Angka-angka yang mendefinisikan Surabaya sebagai pusat metropolitan terbesar kedua Indonesia</p>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card" data-delay="0">
+        <div class="stat-icon">🏙️</div>
+        <div class="stat-number" data-target="3000076">0</div>
+        <div class="stat-label">Jiwa Penduduk</div>
+        <div class="stat-sub">Data pertengahan 2023</div>
+        <div class="stat-bar"><div class="stat-bar-fill" style="width:85%"></div></div>
+      </div>
+      <div class="stat-card" data-delay="100">
+        <div class="stat-icon">📐</div>
+        <div class="stat-number">335,28</div>
+        <div class="stat-label">km² Luas Wilayah</div>
+        <div class="stat-sub">Pantai utara Pulau Jawa</div>
+        <div class="stat-bar"><div class="stat-bar-fill" style="width:60%"></div></div>
+      </div>
+      <div class="stat-card" data-delay="200">
+        <div class="stat-icon">🌆</div>
+        <div class="stat-number">10 JT+</div>
+        <div class="stat-label">Jiwa Area Metropolitan</div>
+        <div class="stat-sub">Kawasan Gerbangkertosusila</div>
+        <div class="stat-bar"><div class="stat-bar-fill" style="width:95%"></div></div>
+      </div>
+      <div class="stat-card" data-delay="300">
+        <div class="stat-icon">⚓</div>
+        <div class="stat-number">750+</div>
+        <div class="stat-label">Tahun Sejarah</div>
+        <div class="stat-sub">Berdiri sejak 1275 M</div>
+        <div class="stat-bar"><div class="stat-bar-fill" style="width:100%"></div></div>
+      </div>
+    </div>
+
+    <!-- Info Panel -->
+    <div class="info-panel">
+      <div class="info-item">
+        <div class="info-icon">✈️</div>
+        <div>
+          <div class="info-title">Bandara Internasional Juanda</div>
+          <div class="info-desc">20 km selatan kota, di Kabupaten Sidoarjo</div>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">🚢</div>
+        <div>
+          <div class="info-title">Pelabuhan Tanjung Perak & Ujung</div>
+          <div class="info-desc">Dua pelabuhan utama yang menghubungkan Surabaya dengan nusantara</div>
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="info-icon">📍</div>
+        <div>
+          <div class="info-title">Lokasi Strategis</div>
+          <div class="info-desc">800 km timur Jakarta — 435 km barat laut Denpasar, Bali</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HISTORY TIMELINE ===== -->
+  <section class="history-section" id="history">
+    <div class="section-header">
+      <span class="section-tag mono">// TIMELINE_SEJARAH</span>
+      <h2 class="section-title">AKAR <span class="accent-text">SEJARAH</span></h2>
+      <p class="section-desc">Dari kerajaan kuno hingga kota metropolitan — perjalanan panjang Surabaya</p>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline-item" data-side="left">
+        <div class="timeline-year">1275</div>
+        <div class="timeline-card">
+          <div class="tcard-tag">PENDIRIAN</div>
+          <h3>Era Kertanegara</h3>
+          <p>Raja Kertanegara mendirikan wilayah Surabaya sebagai permukiman baru bagi prajurit yang berhasil menumpas Pemberontakan Kemuruhan. Dikenal saat itu sebagai Ujung Galuh atau Jung-Ya-Lu.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-side="right">
+        <div class="timeline-year">1358</div>
+        <div class="timeline-card">
+          <div class="tcard-tag">PRASASTI</div>
+          <h3>Prasasti Trowulan I</h3>
+          <p>Bukti tertulis tertua nama Surabaya ditemukan di Prasasti Trowulan I. Surabaya (Śūrabhaya) saat itu masih berupa desa di tepi Sungai Brantas dan titik penyeberangan penting.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-side="left">
+        <div class="timeline-year">1365</div>
+        <div class="timeline-card">
+          <div class="tcard-tag">KAKAWIN</div>
+          <h3>Nagarakretagama</h3>
+          <p>Empu Prapañca mengabadikan Surabaya dalam Kakawin Nagarakretagama — perjalanan pesiar Raja Hayam Wuruk, mencatat kejayaan Majapahit dan posisi strategis Surabaya.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item" data-side="right">
+        <div class="timeline-year">1945</div>
+        <div class="timeline-card">
+          <div class="tcard-tag">PERJUANGAN</div>
+          <h3>Pertempuran 10 November</h3>
+          <p>Arek-Arek Suroboyo berjuang mati-matian mempertahankan kemerdekaan dari serangan sekutu. Peristiwa ini menjadikan Surabaya dikenal sebagai <strong>Kota Pahlawan</strong> — gelar yang terus diemban hingga hari ini.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Legend -->
+    <div class="legend-box">
+      <div class="legend-title">MAKNA NAMA SURABAYA</div>
+      <div class="legend-grid">
+        <div class="legend-item">
+          <span class="legend-icon">🦈</span>
+          <span><strong>SURA</strong> — Ikan Hiu (penjaga laut)</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-icon">🐊</span>
+          <span><strong>BAYA</strong> — Buaya (penguasa sungai)</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-icon">⚔️</span>
+          <span><strong>Śūrabhaya</strong> — Perjuangan antara darat dan air</span>
+        </div>
+        <div class="legend-item">
+          <span class="legend-icon">📜</span>
+          <span><strong>Bahasa Sansekerta</strong> — Akar budaya Nusantara</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DISTRICTS ===== -->
+  <section class="districts-section" id="districts">
+    <div class="section-header">
+      <span class="section-tag mono">// WILAYAH_ADMINISTRASI</span>
+      <h2 class="section-title">PETA <span class="accent-text">WILAYAH</span></h2>
+      <p class="section-desc">5 wilayah administrasi yang membentuk Kota Pahlawan</p>
+    </div>
+
+    <div class="districts-grid">
+      <div class="district-card dc-pusat">
+        <div class="dc-header">
+          <span class="dc-code">SBY-01</span>
+          <span class="dc-name">SURABAYA PUSAT</span>
+        </div>
+        <div class="dc-icon">🏛️</div>
+        <div class="dc-desc">Pusat pemerintahan & bisnis. Kawasan Bubutan, Genteng, Simokerto, Tegalsari, Sawahan.</div>
+        <div class="dc-tag">PUSAT KOTA</div>
+      </div>
+
+      <div class="district-card dc-utara">
+        <div class="dc-header">
+          <span class="dc-code">SBY-02</span>
+          <span class="dc-name">SURABAYA UTARA</span>
+        </div>
+        <div class="dc-icon">⚓</div>
+        <div class="dc-desc">Kawasan pelabuhan & maritim. Pelabuhan Tanjung Perak, Bulak, Kenjeran, Pabean Cantikan.</div>
+        <div class="dc-tag">MARITIM</div>
+      </div>
+
+      <div class="district-card dc-timur">
+        <div class="dc-header">
+          <span class="dc-code">SBY-03</span>
+          <span class="dc-name">SURABAYA TIMUR</span>
+        </div>
+        <div class="dc-icon">🎓</div>
+        <div class="dc-desc">Kawasan pendidikan & perumahan modern. ITS, UNAIR, Gunung Anyar, Sukolilo, Tambaksari.</div>
+        <div class="dc-tag">EDUKASI</div>
+      </div>
+
+      <div class="district-card dc-selatan">
+        <div class="dc-header">
+          <span class="dc-code">SBY-04</span>
+          <span class="dc-name">SURABAYA SELATAN</span>
+        </div>
+        <div class="dc-icon">🏢</div>
+        <div class="dc-desc">Kawasan komersil & residensial. Jambangan, Gayungan, Wonocolo, Wiyung, Karangpilang.</div>
+        <div class="dc-tag">KOMERSIL</div>
+      </div>
+
+      <div class="district-card dc-barat">
+        <div class="dc-header">
+          <span class="dc-code">SBY-05</span>
+          <span class="dc-name">SURABAYA BARAT</span>
+        </div>
+        <div class="dc-icon">🌿</div>
+        <div class="dc-desc">Kawasan industri & pengembangan. Lakarsantri, Sambikerep, Tandes, Benowo, Pakal.</div>
+        <div class="dc-tag">INDUSTRI</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CULTURE ===== -->
+  <section class="culture-section" id="culture">
+    <div class="section-header">
+      <span class="section-tag mono">// IDENTITAS_BUDAYA</span>
+      <h2 class="section-title">BUDAYA & <span class="accent-text">IDENTITAS</span></h2>
+      <p class="section-desc">Karakter khas yang membedakan Surabaya dari kota-kota lainnya</p>
+    </div>
+
+    <div class="culture-grid">
+      <div class="culture-card">
+        <div class="culture-num">01</div>
+        <div class="culture-icon">🦈</div>
+        <h3>Simbol Sura & Baya</h3>
+        <p>Ikan hiu dan buaya — simbol kota yang mencerminkan jiwa perjuangan dan keberanian tanpa kompromi. Ditemukan di seluruh sudut kota.</p>
+      </div>
+      <div class="culture-card">
+        <div class="culture-num">02</div>
+        <div class="culture-icon">🗣️</div>
+        <h3>Bahasa Suroboyoan</h3>
+        <p>Dialek khas dengan karakter blak-blakan, tegas, dan egaliter. "Arek Suroboyo" adalah sebutan kebanggaan warga asli Surabaya yang dikenal keras namun berjiwa besar.</p>
+      </div>
+      <div class="culture-card">
+        <div class="culture-num">03</div>
+        <div class="culture-icon">🍜</div>
+        <h3>Kuliner Legendaris</h3>
+        <p>Rawon, Rujak Cingur, Lontong Balap, Semanggi Suroboyo. Kuliner Surabaya dikenal kaya rasa dan menjadi identitas gastronomi Jawa Timur.</p>
+      </div>
+      <div class="culture-card">
+        <div class="culture-num">04</div>
+        <div class="culture-icon">🏆</div>
+        <h3>Jiwa Pahlawan</h3>
+        <p>Spirit 10 November 1945 masih mengalir deras. Surabaya melahirkan karakter masyarakat yang pantang menyerah, berani, dan bangga dengan identitasnya.</p>
+      </div>
+      <div class="culture-card">
+        <div class="culture-num">05</div>
+        <div class="culture-icon">🏭</div>
+        <h3>Pusat Industri & Ekonomi</h3>
+        <p>Salah satu dari empat pusat pertumbuhan nasional versi Bappenas, bersama Medan, Jakarta, dan Makassar. Surabaya adalah mesin ekonomi Indonesia Timur.</p>
+      </div>
+      <div class="culture-card">
+        <div class="culture-num">06</div>
+        <div class="culture-icon">🌊</div>
+        <h3>Kota Maritim</h3>
+        <p>Menghadap Selat Madura dan Laut Jawa, Pelabuhan Tanjung Perak adalah salah satu pelabuhan tersibuk di Asia Tenggara — nadi perdagangan Nusantara.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="footer-logo">
+      <span class="footer-anchor">⚓</span>
+      <span class="footer-brand">SURABAYA</span>
+    </div>
+    <div class="footer-tagline">"Humanis, Efektif, Berakhlak, Akuntabel, dan Transparan"</div>
+    <div class="footer-meta">
+      <span class="mono">Kota Pahlawan — Jawa Timur, Indonesia</span>
+      <span class="footer-divider">|</span>
+      <span class="mono">Data: Wikipedia ID / 2023</span>
+      <span class="footer-divider">|</span>
+      <span class="mono">Built with 🔥 for SBY</span>
+    </div>
+    <div class="footer-coords mono">[ -7.2575° S, 112.7521° E ]</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
