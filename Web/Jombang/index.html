@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jombang — Kota Santri</title>
+    <link rel="stylesheet" href="jombang.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=DM+Serif+Display:ital@0;1&family=Lato:wght@300;400;700&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- Geometric Pattern Overlay -->
+    <div class="geo-overlay" id="geoOverlay"></div>
+
+    <!-- ===== NAVBAR ===== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-brand">
+                <span class="brand-ornament">✦</span>
+                <span class="brand-text">JOMBANG</span>
+                <span class="brand-ornament">✦</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#hero" class="nav-link">Beranda</a></li>
+                <li><a href="#overview" class="nav-link">Gambaran</a></li>
+                <li><a href="#history" class="nav-link">Sejarah</a></li>
+                <li><a href="#pesantren" class="nav-link">Pesantren</a></li>
+                <li><a href="#tokoh" class="nav-link">Tokoh</a></li>
+                <li><a href="#geography" class="nav-link">Geografi</a></li>
+            </ul>
+            <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+        </div>
+    </nav>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+        <!-- SVG Islamic Geometric Background -->
+        <div class="hero-pattern-bg">
+            <svg class="pattern-svg" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+        <defs>
+          <pattern id="islamicPattern" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
+            <g stroke="rgba(139,90,43,0.12)" fill="none" stroke-width="0.8">
+              <polygon points="50,2 98,26 98,74 50,98 2,74 2,26"/>
+              <polygon points="50,15 85,33 85,67 50,85 15,67 15,33"/>
+              <line x1="50" y1="2" x2="50" y2="98"/>
+              <line x1="2" y1="50" x2="98" y2="50"/>
+              <line x1="2" y1="26" x2="98" y2="74"/>
+              <line x1="2" y1="74" x2="98" y2="26"/>
+              <circle cx="50" cy="50" r="12" stroke="rgba(74,124,69,0.1)"/>
+              <circle cx="50" cy="50" r="25" stroke="rgba(74,124,69,0.06)"/>
+            </g>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#islamicPattern)"/>
+      </svg>
+        </div>
+
+        <div class="hero-left">
+            <div class="hero-kaligrafi">بِسْمِ اللهِ</div>
+            <div class="hero-label">KABUPATEN JOMBANG — JAWA TIMUR</div>
+            <h1 class="hero-title">
+                <em>Kota</em><br/>
+                <span class="title-big">SANTRI</span>
+            </h1>
+            <p class="hero-desc">
+                Di mana dua warna menyatu — <span class="ijo">ijo</span> kaum agamis dan <span class="abang">abang</span> kaum abangan — melahirkan harmoni yang telah bertahan berabad-abad di jantung Jawa Timur.
+            </p>
+            <div class="hero-tagline">"BERsih, Indah, nyaMAN"</div>
+            <div class="hero-actions">
+                <a href="#overview" class="btn-leaf">Jelajahi</a>
+                <a href="#pesantren" class="btn-outline">Pesantren</a>
+            </div>
+        </div>
+
+        <div class="hero-right">
+            <div class="hero-emblem">
+                <!-- Geometric mandala -->
+                <div class="mandala-wrap">
+                    <div class="mandala-ring m-r1"></div>
+                    <div class="mandala-ring m-r2"></div>
+                    <div class="mandala-ring m-r3"></div>
+                    <div class="mandala-inner">
+                        <span class="mandala-icon">☪</span>
+                    </div>
+                    <div class="mandala-label-top">BERIMAN</div>
+                    <div class="mandala-label-right">TOLERANSI</div>
+                    <div class="mandala-label-bottom">SANTRI</div>
+                </div>
+            </div>
+
+            <!-- Quick stats pill -->
+            <div class="hero-pills">
+                <div class="pill">
+                    <span class="pill-val">1.376.547</span>
+                    <span class="pill-lbl">Jiwa</span>
+                </div>
+                <div class="pill-divider">✦</div>
+                <div class="pill">
+                    <span class="pill-val">1.159,50</span>
+                    <span class="pill-lbl">km²</span>
+                </div>
+                <div class="pill-divider">✦</div>
+                <div class="pill">
+                    <span class="pill-val">21</span>
+                    <span class="pill-lbl">Kecamatan</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll-hint">
+            <span class="scroll-text">Gulir ke bawah</span>
+            <div class="scroll-feather">↓</div>
+        </div>
+    </section>
+
+    <!-- ===== OVERVIEW STRIP ===== -->
+    <div class="overview-strip" id="overview">
+        <div class="strip-item">
+            <div class="strip-icon">🕌</div>
+            <div class="strip-content">
+                <div class="strip-title">Kota Santri</div>
+                <div class="strip-sub">Pusat pesantren terbesar di Pulau Jawa</div>
+            </div>
+        </div>
+        <div class="strip-sep">◆</div>
+        <div class="strip-item">
+            <div class="strip-icon">🌿</div>
+            <div class="strip-content">
+                <div class="strip-title">Ijo & Abang</div>
+                <div class="strip-sub">Harmoni santri dan abangan sejak lama</div>
+            </div>
+        </div>
+        <div class="strip-sep">◆</div>
+        <div class="strip-item">
+            <div class="strip-icon">🌊</div>
+            <div class="strip-content">
+                <div class="strip-title">Sungai Brantas</div>
+                <div class="strip-sub">Nadi kehidupan yang membelah kabupaten</div>
+            </div>
+        </div>
+        <div class="strip-sep">◆</div>
+        <div class="strip-item">
+            <div class="strip-icon">🛤️</div>
+            <div class="strip-content">
+                <div class="strip-title">Persimpangan Strategis</div>
+                <div class="strip-sub">Jalur tengah Jakarta–Surabaya & selatan Jawa</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===== IDENTITY SECTION ===== -->
+    <section class="identity-section" id="identity">
+        <div class="identity-inner">
+            <div class="identity-text reveal">
+                <span class="section-eyebrow">✦ MAKNA NAMA</span>
+                <h2 class="section-title">Ijo <span class="ampersand">&amp;</span> Abang</h2>
+                <p class="body-text">
+                    Nama <strong>Jombang</strong> dipercaya berasal dari perpaduan dua kata dalam Bahasa Jawa —
+                    <em>ijo</em> (hijau) yang melambangkan kaum santri yang taat agama, dan
+                    <em>abang</em> (merah) yang melambangkan kaum abangan.
+                </p>
+                <p class="body-text">
+                    Kedua kelompok ini hidup berdampingan secara harmonis — bahkan tergambar dalam warna dasar lambang daerah Kabupaten Jombang. Sebuah pelajaran toleransi yang telah ada jauh sebelum kata itu menjadi populer.
+                </p>
+                <div class="color-legend">
+                    <div class="cl-item ijo-item">
+                        <div class="cl-swatch ijo-swatch"></div>
+                        <div>
+                            <strong>IJO — Hijau</strong>
+                            <span>Kaum Santri · Agamis · Spiritual</span>
+                        </div>
+                    </div>
+                    <div class="cl-item abang-item">
+                        <div class="cl-swatch abang-swatch"></div>
+                        <div>
+                            <strong>ABANG — Merah</strong>
+                            <span>Kaum Abangan · Sekuler · Tradisional Jawa</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="identity-visual reveal">
+                <div class="yin-yang-wrapper">
+                    <div class="yy-half yy-ijo">
+                        <span class="yy-char">☽</span>
+                        <span class="yy-label">IJO</span>
+                    </div>
+                    <div class="yy-half yy-abang">
+                        <span class="yy-char">☀</span>
+                        <span class="yy-label">ABANG</span>
+                    </div>
+                    <div class="yy-center">✦</div>
+                </div>
+                <p class="visual-caption">Harmoni dua warna, satu jiwa</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== HISTORY SECTION ===== -->
+    <section class="history-section" id="history">
+        <div class="section-header-center reveal">
+            <span class="section-eyebrow">✦ LINTAS WAKTU</span>
+            <h2 class="section-title">Sejarah <em>Jombang</em></h2>
+            <p class="section-lead">Dari lembah sungai prasejarah hingga lahirnya para pemimpin bangsa</p>
+        </div>
+
+        <div class="history-cards">
+            <div class="hcard reveal" data-delay="0">
+                <div class="hcard-era">Prasejarah</div>
+                <div class="hcard-year">Ratusan Ribu Tahun Lalu</div>
+                <div class="hcard-ornament">◈</div>
+                <h3 class="hcard-title">Homo Mojokertensis</h3>
+                <p class="hcard-body">Penemuan fosil Homo mojokertensis di lembah Sungai Brantas membuktikan wilayah Jombang telah dihuni sejak ratusan ribu tahun lalu — salah satu bukti peradaban paling awal di Pulau Jawa.</p>
+            </div>
+
+            <div class="hcard reveal" data-delay="120">
+                <div class="hcard-era">Kerajaan Kuno</div>
+                <div class="hcard-year">929 Masehi</div>
+                <div class="hcard-ornament">◈</div>
+                <h3 class="hcard-title">Mpu Sindok & Mataram</h3>
+                <p class="hcard-body">Raja Mpu Sindok memindahkan pusat Kerajaan Mataram dari Jawa Tengah ke Jawa Timur. Wilayah Jombang mulai masuk dalam peta kekuasaan kerajaan-kerajaan besar Nusantara.</p>
+            </div>
+
+            <div class="hcard reveal" data-delay="240">
+                <div class="hcard-era">Era Pesantren</div>
+                <div class="hcard-year">Abad 19–20</div>
+                <div class="hcard-ornament">◈</div>
+                <h3 class="hcard-title">Lahirnya Pusat Santri</h3>
+                <p class="hcard-body">Berdirinya pesantren-pesantren besar: Tebuireng oleh K.H. Hasyim Asy'ari, Tambak Beras, Denanyar, dan Darul Ulum Rejoso. Jombang menjadi kiblat pendidikan Islam di Nusantara.</p>
+            </div>
+
+            <div class="hcard reveal" data-delay="360">
+                <div class="hcard-era">Era Modern</div>
+                <div class="hcard-year">1999</div>
+                <div class="hcard-ornament">◈</div>
+                <h3 class="hcard-title">Gus Dur, Presiden ke-4</h3>
+                <p class="hcard-body">K.H. Abdurrahman Wahid, putra Jombang, terpilih sebagai Presiden Republik Indonesia ke-4. Puncak dari perjalanan panjang Jombang sebagai tanah para pemimpin dan ulama besar.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== PESANTREN SECTION ===== -->
+    <section class="pesantren-section" id="pesantren">
+        <div class="pesantren-bg-text">SANTRI</div>
+
+        <div class="pesantren-inner">
+            <div class="pesantren-header reveal">
+                <span class="section-eyebrow">✦ JANTUNG KOTA SANTRI</span>
+                <h2 class="section-title">Pondok <em>Pesantren</em></h2>
+                <p class="section-lead">
+                    "Hampir seluruh pendiri pesantren di Jawa pernah berguru di Jombang" — sebuah pemeo yang mencerminkan betapa dalamnya akar keilmuan Islam di sini.
+                </p>
+            </div>
+
+            <div class="pp-grid">
+                <div class="pp-card pp-featured reveal">
+                    <div class="pp-ornament-top"></div>
+                    <div class="pp-badge">TERKEMUKA</div>
+                    <div class="pp-icon">🕌</div>
+                    <h3 class="pp-name">Tebuireng</h3>
+                    <p class="pp-founder">Didirikan oleh K.H. Hasyim Asy'ari</p>
+                    <p class="pp-desc">Salah satu pesantren paling berpengaruh di Indonesia. Melahirkan generasi ulama dan pemimpin nasional. Terletak di Kecamatan Diwek, Jombang.</p>
+                    <div class="pp-tag">Pahlawan Nasional</div>
+                </div>
+
+                <div class="pp-card reveal" data-delay="100">
+                    <div class="pp-ornament-top"></div>
+                    <div class="pp-icon">📿</div>
+                    <h3 class="pp-name">Tambak Beras</h3>
+                    <p class="pp-founder">Kecamatan Jombang</p>
+                    <p class="pp-desc">Pesantren bersejarah yang menjadi tempat lahirnya banyak tokoh agama dan nasional. Dikenal dengan tradisi keilmuan Islam yang kuat.</p>
+                    <div class="pp-tag">Warisan Ulama</div>
+                </div>
+
+                <div class="pp-card reveal" data-delay="200">
+                    <div class="pp-ornament-top"></div>
+                    <div class="pp-icon">📖</div>
+                    <h3 class="pp-name">Denanyar</h3>
+                    <p class="pp-founder">Kecamatan Jombang</p>
+                    <p class="pp-desc">Pesantren dengan tradisi pendidikan Islam modern yang memadukan ilmu agama dan ilmu umum. Salah satu pilar pendidikan di Jombang.</p>
+                    <div class="pp-tag">Pendidikan Islam</div>
+                </div>
+
+                <div class="pp-card reveal" data-delay="300">
+                    <div class="pp-ornament-top"></div>
+                    <div class="pp-icon">🌙</div>
+                    <h3 class="pp-name">Darul Ulum Rejoso</h3>
+                    <p class="pp-founder">Kecamatan Peterongan</p>
+                    <p class="pp-desc">Pesantren besar dengan ribuan santri dari seluruh Indonesia. Memiliki lembaga pendidikan formal dari tingkat dasar hingga perguruan tinggi.</p>
+                    <div class="pp-tag">Ribuan Santri</div>
+                </div>
+            </div>
+
+            <!-- Quote -->
+            <blockquote class="pp-quote reveal">
+                <span class="quote-mark">"</span> Jombang adalah ibu dari pesantren-pesantren di Jawa. Dari sinilah ilmu mengalir ke seluruh pelosok nusantara.
+                <span class="quote-mark">"</span>
+            </blockquote>
+        </div>
+    </section>
+
+    <!-- ===== TOKOH SECTION ===== -->
+    <section class="tokoh-section" id="tokoh">
+        <div class="section-header-center reveal">
+            <span class="section-eyebrow">✦ PUTRA-PUTRI TERBAIK</span>
+            <h2 class="section-title">Tokoh <em>Nasional</em></h2>
+            <p class="section-lead">Jombang melahirkan para pemimpin, ulama, dan intelektual yang mengubah wajah Indonesia</p>
+        </div>
+
+        <div class="tokoh-grid">
+            <div class="tokoh-card tc-main reveal">
+                <div class="tc-number">01</div>
+                <div class="tc-icon">👤</div>
+                <h3 class="tc-name">K.H. Abdurrahman Wahid</h3>
+                <div class="tc-title">Presiden RI ke-4 · Gus Dur</div>
+                <p class="tc-desc">Negarawan, ulama, dan humanis. Tokoh pluralisme yang pemikirannya melampaui zamannya. Lahir di Denanyar, Jombang — putra dari K.H. Wahid Hasyim.</p>
+                <div class="tc-tag">Presiden Indonesia</div>
+            </div>
+
+            <div class="tokoh-card reveal" data-delay="100">
+                <div class="tc-number">02</div>
+                <div class="tc-icon">📜</div>
+                <h3 class="tc-name">K.H. Hasyim Asy'ari</h3>
+                <div class="tc-title">Pahlawan Nasional · Pendiri NU</div>
+                <p class="tc-desc">Ulama besar pendiri Nahdlatul Ulama dan Pesantren Tebuireng. Pejuang kemerdekaan yang fatwa jihadnya menjadi penggerak rakyat melawan penjajah.</p>
+                <div class="tc-tag">Pahlawan Nasional</div>
+            </div>
+
+            <div class="tokoh-card reveal" data-delay="200">
+                <div class="tc-number">03</div>
+                <div class="tc-icon">📜</div>
+                <h3 class="tc-name">K.H. Wahid Hasyim</h3>
+                <div class="tc-title">Pahlawan Nasional · Menteri Agama RI</div>
+                <p class="tc-desc">Putra K.H. Hasyim Asy'ari yang menjadi Menteri Agama pertama Indonesia. Salah satu perumus Piagam Jakarta dan konsensus nasional.</p>
+                <div class="tc-tag">Founding Father</div>
+            </div>
+
+            <div class="tokoh-card reveal" data-delay="300">
+                <div class="tc-number">04</div>
+                <div class="tc-icon">🎓</div>
+                <h3 class="tc-name">Nurcholish Madjid</h3>
+                <div class="tc-title">Cendekiawan Muslim · Cak Nur</div>
+                <p class="tc-desc">Intelektual Islam modernis yang pemikirannya tentang sekularisasi dan pluralisme mengubah wajah Islam Indonesia. Rektor Universitas Paramadina.</p>
+                <div class="tc-tag">Intelektual Islam</div>
+            </div>
+
+            <div class="tokoh-card reveal" data-delay="400">
+                <div class="tc-number">05</div>
+                <div class="tc-icon">🎭</div>
+                <h3 class="tc-name">Emha Ainun Najib</h3>
+                <div class="tc-title">Budayawan · Cak Nun</div>
+                <p class="tc-desc">Penyair, budayawan, dan pemikir Islam kontemporer. Sosok unik yang memadukan seni, budaya, dan spiritualitas dalam satu napas yang khas Jombang.</p>
+                <div class="tc-tag">Budayawan</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== GEOGRAPHY SECTION ===== -->
+    <section class="geo-section" id="geography">
+        <div class="geo-inner">
+            <div class="geo-text reveal">
+                <span class="section-eyebrow">✦ ALAM & WILAYAH</span>
+                <h2 class="section-title">Geografi <em>Jombang</em></h2>
+                <p class="body-text">
+                    Seluas 1.159,50 km² dengan 21 kecamatan dan 306 desa/kelurahan — Jombang terbagi menjadi tiga karakter alam yang unik.
+                </p>
+
+                <div class="geo-parts">
+                    <div class="geo-part reveal" data-delay="0">
+                        <div class="gp-icon">⛰️</div>
+                        <div>
+                            <div class="gp-title">Bagian Utara</div>
+                            <div class="gp-desc">Perbukitan kapur di utara Sungai Brantas — ujung timur Pegunungan Kendeng. Ketinggian maks. 500 m dpl.</div>
+                        </div>
+                    </div>
+                    <div class="geo-part reveal" data-delay="120">
+                        <div class="gp-icon">🌾</div>
+                        <div>
+                            <div class="gp-title">Bagian Tengah</div>
+                            <div class="gp-desc">Dataran rendah subur dengan jaringan irigasi ekstensif. Kawasan pertanian utama dan permukiman padat.</div>
+                        </div>
+                    </div>
+                    <div class="geo-part reveal" data-delay="240">
+                        <div class="gp-icon">🌲</div>
+                        <div>
+                            <div class="gp-title">Bagian Selatan</div>
+                            <div class="gp-desc">Pegunungan bergelombang di Wonosalam. Makin ke tenggara, makin tinggi — sebagian di atas 1.000 m dpl.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="geo-stats-visual reveal">
+                <div class="gsv-title">PENGGUNAAN LAHAN</div>
+                <div class="bar-chart">
+                    <div class="bar-item">
+                        <div class="bar-label">Persawahan</div>
+                        <div class="bar-track">
+                            <div class="bar-fill bf-sawah" data-w="42"></div>
+                            <span class="bar-pct">42%</span>
+                        </div>
+                    </div>
+                    <div class="bar-item">
+                        <div class="bar-label">Permukiman</div>
+                        <div class="bar-track">
+                            <div class="bar-fill bf-mukim" data-w="19"></div>
+                            <span class="bar-pct">19%</span>
+                        </div>
+                    </div>
+                    <div class="bar-item">
+                        <div class="bar-label">Hutan</div>
+                        <div class="bar-track">
+                            <div class="bar-fill bf-hutan" data-w="18"></div>
+                            <span class="bar-pct">18%</span>
+                        </div>
+                    </div>
+                    <div class="bar-item">
+                        <div class="bar-label">Tegal</div>
+                        <div class="bar-track">
+                            <div class="bar-fill bf-tegal" data-w="12"></div>
+                            <span class="bar-pct">12%</span>
+                        </div>
+                    </div>
+                    <div class="bar-item">
+                        <div class="bar-label">Lainnya</div>
+                        <div class="bar-track">
+                            <div class="bar-fill bf-lain" data-w="9"></div>
+                            <span class="bar-pct">9%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="brantas-info">
+                    <div class="bi-icon">🌊</div>
+                    <div>
+                        <div class="bi-title">Sungai Brantas</div>
+                        <div class="bi-desc">Membelah Jombang ±44 km — utara (24%) dan selatan (76%). Sungai terbesar di Jawa Timur.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="footer-pattern">
+            <svg viewBox="0 0 800 100" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0,50 C100,20 200,80 400,50 C600,20 700,80 800,50 L800,100 L0,100 Z" fill="rgba(74,124,69,0.08)"/>
+      </svg>
+        </div>
+        <div class="footer-inner">
+            <div class="footer-brand">
+                <div class="footer-ornament">✦ ✦ ✦</div>
+                <div class="footer-name">JOMBANG</div>
+                <div class="footer-sub">Kabupaten · Jawa Timur · Indonesia</div>
+            </div>
+            <div class="footer-quote">
+                <em>"Kota Santri yang melahirkan ulama, negarawan, dan pemikir bagi bangsa."</em>
+            </div>
+            <div class="footer-meta">
+                <span>112°03'–112°27' BT</span>
+                <span class="f-dot">✦</span>
+                <span>7°24'–7°45' LS</span>
+                <span class="f-dot">✦</span>
+                <span>Ketinggian 44 mdpl</span>
+                <span class="f-dot">✦</span>
+                <span>Data: Wikipedia ID / 2024</span>
+            </div>
+        </div>
+    </footer>
+
+    <script src="jombang.js"></script>
+</body>
+
+</html>
